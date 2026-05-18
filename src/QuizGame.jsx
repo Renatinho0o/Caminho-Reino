@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './QuizGame.css';
 import { useGamePersistence } from './hooks/useGamePersistence';
+import { useAuth } from './contexts/AuthContext';
 
 // Dados da lição: Jesus se fez carne por amor
 const lessonData = {
@@ -190,10 +191,242 @@ const lessonData = {
         icon: "🔥"
       }
     },
-    { id: 5, title: "Capítulo 5", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
-    { id: 6, title: "Capítulo 6", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
-    { id: 7, title: "Capítulo 7", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
-    { id: 8, title: "Capítulo 8", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
+    {
+      id: 5,
+      title: "A Autoridade do Rei Sobre as Trevas",
+      description: "Jesus tem poder sobre os demônios",
+      icon: "👑",
+      unlocked: true,
+      questions: [
+        {
+          question: "Segundo a lição, qual evento bíblico é apresentado como a primeira evidência da atuação satânica contra o propósito divino para a humanidade?",
+          answers: [
+            { text: "A corrupção da humanidade nos dias de Noé", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A rebelião de Corá contra Moisés", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A tentação no deserto contra Jesus", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "A indução de Adão e Eva ao pecado no Éden", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "Ao relacionar Gênesis 3.15 com a missão de Cristo, a lição ensina que:",
+          answers: [
+            { text: "Satanás recebeu domínio eterno sobre a Terra", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A vitória de Cristo sobre o império das trevas já havia sido anunciada desde o Éden", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "O homem seria capaz de vencer o Diabo sem intervenção divina", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "A derrota de Satanás ocorreu definitivamente nos dias de Jó", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Qual alternativa expressa corretamente a relação entre a vinda de Jesus e a intensificação da atuação maligna no Novo Testamento?",
+          answers: [
+            { text: "A presença de Jesus eliminou completamente a atuação demoníaca durante Seu ministério", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O Novo Testamento ignora a atuação espiritual do Maligno", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A manifestação de Cristo revelou e confrontou diretamente o reino das trevas", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Satanás recebeu atributos divinos temporários para enfrentar Jesus", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a lição, qual característica diferencia Satanás do Deus Todo-Poderoso?",
+          answers: [
+            { text: "Satanás desconhece totalmente a humanidade", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Satanás possui autoridade absoluta sobre os demônios e os céus", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Satanás atua apenas no Inferno e não na Terra", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Satanás é um ser limitado, sem onisciência, onipotência e onipresença", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "No episódio do endemoninhado de Cafarnaum em Lucas 4.31-36, qual verdade teológica é enfatizada pela lição?",
+          answers: [
+            { text: "Os demônios podem resistir à autoridade de Cristo quando encontram fé fraca", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A libertação espiritual depende exclusivamente do conhecimento humano", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A simples presença e palavra de Jesus são suficientes para subjugar o poder maligno", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A possessão demoníaca ocorre apenas por influência hereditária", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Coroa da Libertação",
+        description: "Símbolo da vitória absoluta de Cristo sobre o reino das trevas",
+        icon: "👑"
+      }
+    },
+    {
+      id: 6,
+      title: "O Médico dos Impossíveis",
+      description: "Jesus tem poder sobre as doenças",
+      icon: "💊",
+      unlocked: true,
+      questions: [
+        {
+          question: "Segundo a lição, qual relação teológica é estabelecida entre Romanos 5.12 e a origem das enfermidades?",
+          answers: [
+            { text: "As doenças surgiram exclusivamente por ações demoníacas individuais", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Toda enfermidade é consequência direta de pecados pessoais", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "O pecado original introduziu deterioração e fragilidade em toda a criação", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Deus criou as enfermidades para testar espiritualmente a humanidade", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "A expressão grega \"sozo\", utilizada por Jesus ao declarar \"a tua fé te salvou\", revela qual aspecto profundo do milagre da mulher do fluxo de sangue?",
+          answers: [
+            { text: "Uma libertação exclusivamente emocional", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Uma restauração integral envolvendo salvação, cura e dignidade", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "Apenas a interrupção física da enfermidade", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Uma recompensa reservada somente aos judeus", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "De acordo com a lição, por que as curas realizadas por Jesus eram consideradas sinais do Reino de Deus?",
+          answers: [
+            { text: "Porque substituíam totalmente a necessidade de arrependimento", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Porque provavam superioridade política sobre Roma", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Porque revelavam a chegada do Messias e a reversão dos efeitos da Queda", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Porque beneficiavam exclusivamente os discípulos escolhidos", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Qual alternativa expressa corretamente o equilíbrio ensinado pela lição entre cura divina e responsabilidade humana?",
+          answers: [
+            { text: "Buscar tratamento médico demonstra falta de fé", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O cuidado com o corpo é irrelevante diante da soberania divina", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A oração substitui completamente hábitos saudáveis e acompanhamento médico", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Deus continua curando, mas o cristão também deve cuidar do corpo como templo do Espírito Santo", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "Ao apresentar diferentes formas de cura realizadas por Jesus — toque, palavra e cura à distância — a lição enfatiza principalmente que:",
+          answers: [
+            { text: "Apenas milagres públicos possuem validade espiritual", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O poder de Cristo não está limitado a métodos, distância ou circunstâncias", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "As curas dependiam exclusivamente da intensidade emocional das multidões", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Somente pessoas fisicamente presentes poderiam experimentar milagres", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Fragmento de Yahweh-Rafa",
+        description: "Relíquia sagrada que simboliza o poder restaurador do Deus que cura",
+        icon: "✨"
+      }
+    },
+    {
+      id: 7,
+      title: "O Chamado da Consagração",
+      description: "Oração e jejum como caminhos de comunhão, fortalecimento espiritual e dependência de Deus",
+      icon: "🙏",
+      unlocked: true,
+      questions: [
+        {
+          question: "Ao relacionar Mateus 9.15 com a prática cristã do jejum, a lição enfatiza que:",
+          answers: [
+            { text: "O jejum foi abolido após a ressurreição de Cristo", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O jejum pertence apenas ao contexto judaico do Antigo Testamento", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A ausência física de Cristo inauguraria um período de busca intensa através da oração e do jejum", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "O jejum seria necessário somente para líderes espirituais da Igreja", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a perspectiva pentecostal apresentada na lição, qual é a principal função espiritual do jejum?",
+          answers: [
+            { text: "Produzir mérito espiritual capaz de garantir respostas divinas", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Submeter a carne, aumentar a sensibilidade espiritual e fortalecer a comunhão com Deus", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "Demonstrar publicamente santidade diante da comunidade cristã", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Substituir a necessidade de oração constante e leitura bíblica", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "A lição utiliza o rasgar do véu do Templo como símbolo teológico de qual realidade espiritual?",
+          answers: [
+            { text: "O encerramento definitivo das práticas de oração coletiva", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O acesso direto do crente ao Pai por meio da obra de Cristo", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "A transferência da presença de Deus exclusivamente para Jerusalém", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "A necessidade de novos sacrifícios contínuos para alcançar comunhão com Deus", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Ao ensinar sobre \"orar sem cessar\", a lição estabelece que:",
+          answers: [
+            { text: "A eficácia da oração depende de horários e posições corporais específicas", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Apenas orações longas demonstram verdadeira espiritualidade", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A oração deve tornar-se um estilo contínuo de comunhão e dependência de Deus", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Deus responde somente às orações realizadas dentro do templo", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "O exemplo de Acabe no Antigo Testamento foi utilizado na lição para demonstrar principalmente que:",
+          answers: [
+            { text: "O jejum possui poder automático para remover qualquer juízo divino", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Deus ignora completamente atos externos de humilhação", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "O quebrantamento sincero pode despertar misericórdia divina mesmo em alguém profundamente pecador", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "O arrependimento verdadeiro depende exclusivamente de jejuns públicos coletivos", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Véu Rasgado da Comunhão",
+        description: "Fragmento sagrado que representa o acesso direto ao Pai através da oração e da consagração",
+        icon: "🙏"
+      }
+    },
+    {
+      id: 8,
+      title: "O Peso da Dívida Impagável",
+      description: "Posso Perdoar e Amar",
+      icon: "⛓️",
+      unlocked: true,
+      questions: [
+        {
+          question: "Na parábola do credor incompassivo, qual é o principal contraste teológico construído por Jesus entre as duas dívidas apresentadas?",
+          answers: [
+            { text: "A diferença entre justiça romana e justiça judaica na cobrança de impostos", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A incapacidade humana de compreender valores financeiros espirituais", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A desproporção entre a dívida espiritual perdoada por Deus e as ofensas humanas que nos recusamos a perdoar", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A distinção entre pecados conscientes e pecados involuntários", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a interpretação pentecostal apresentada na lição, por que a falta de perdão é considerada espiritualmente perigosa?",
+          answers: [
+            { text: "Porque reduz a autoridade ministerial do crente diante da igreja", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Porque impede o acesso ao conhecimento teológico profundo", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Porque rompe tradições religiosas e compromete a disciplina eclesiástica", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Porque entristece o Espírito Santo, produz amargura e compromete a comunhão com Deus", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "Ao responder \"setenta vezes sete\" a Pedro, Jesus combate diretamente qual conceito predominante no pensamento judaico da época?",
+          answers: [
+            { text: "A ideia de que somente Deus poderia exercer misericórdia", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A crença rabínica de que o perdão possuía limites contáveis", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "A tradição de que o Messias julgaria sem compaixão", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "O ensino de que apenas os sacerdotes tinham autoridade para liberar perdão", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "De acordo com a lição, qual relação existe entre o novo nascimento e a capacidade de amar em um contexto de crescente iniquidade?",
+          answers: [
+            { text: "O novo nascimento remove completamente os conflitos emocionais humanos", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O amor cristão surge naturalmente através do amadurecimento psicológico", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "O novo nascimento, operado pelo Espírito Santo, capacita o crente a vencer a frieza espiritual e responder à maldade com graça", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A prática religiosa constante substitui a necessidade de transformação interior", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a lição, por que o perdão divino não pode ser entendido como resultado de mérito humano?",
+          answers: [
+            { text: "Porque a dívida espiritual possui natureza moral e somente a graça manifestada em Cristo pode cancelá-la", color: "red", shape: "triangle", isCorrect: true },
+            { text: "Porque Deus decidiu ignorar completamente a existência do pecado humano", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Porque o perdão foi concedido apenas aos personagens bíblicos do Novo Testamento", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Porque boas obras possuem maior valor que arrependimento e misericórdia", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Corrente Quebrada da Graça",
+        description: "Símbolo da dívida espiritual cancelada por Cristo e do coração liberto para perdoar",
+        icon: "⛓️"
+      }
+    },
     { id: 9, title: "Capítulo 9", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 10, title: "Capítulo 10", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 11, title: "Capítulo 11", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
@@ -211,6 +444,7 @@ const bonusReward = {
 };
 
 export default function QuizGame({ onQuit }) {
+  const { user, logout } = useAuth(); // Obter dados do usuário logado
   const [gameState, setGameState] = useState('menu'); // menu, map, quiz, result, inventory
   const [currentChapter, setCurrentChapter] = useState(null);
   const [currentQIndex, setCurrentQIndex] = useState(0);
@@ -229,14 +463,15 @@ export default function QuizGame({ onQuit }) {
   const [capturedChapter, setCapturedChapter] = useState(null);
   const [miniObstacles, setMiniObstacles] = useState([]);
 
-  // Integrar persistência de dados com localStorage
+  // Integrar persistência de dados com localStorage - vinculado ao usuário
   useGamePersistence({
     chaptersCompleted,
     inventory,
     totalScore,
     setChaptersCompleted,
     setInventory,
-    setTotalScore
+    setTotalScore,
+    userId: user?.id // Vincular dados ao ID do usuário
   });
 
   const itemSlotCount = 14;
@@ -435,12 +670,18 @@ export default function QuizGame({ onQuit }) {
     return (
       <div className="quiz-container menu-bg">
         <div className="menu-content menu-content-compact">
+          <div style={{ marginBottom: '20px', textAlign: 'center', color: '#fff' }}>
+            <p style={{ fontSize: '14px', color: '#aaa' }}>Bem-vindo, {user?.name}!</p>
+          </div>
           <div className="menu-buttons">
             <button className="menu-btn primary" onClick={() => setGameState('map')}>
               🎮 Iniciar
             </button>
             <button className="menu-btn secondary" onClick={() => setGameState('inventory')}>
               🎒 Inventário {inventory.length > 0 && <span className="badge">{inventory.length}</span>}
+            </button>
+            <button className="menu-btn secondary" onClick={logout} style={{ marginTop: '10px', backgroundColor: '#e74c3c' }}>
+              🚪 Sair
             </button>
           </div>
         </div>

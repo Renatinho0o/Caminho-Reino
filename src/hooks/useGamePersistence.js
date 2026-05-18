@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback } from 'react';
 
 /**
  * Hook para gerenciar a persistência dos dados do jogo no localStorage
  * Salva automaticamente o progresso do usuário (chapters concluídos, inventário, pontuação total)
+ * Os dados são salvos vinculados ao usuário logado (por user ID)
  */
 export function useGamePersistence({
   chaptersCompleted,
@@ -10,9 +11,11 @@ export function useGamePersistence({
   totalScore,
   setChaptersCompleted,
   setInventory,
-  setTotalScore
+  setTotalScore,
+  userId = null // ID do usuário para vincular os dados
 }) {
-  const STORAGE_KEY = 'caminhoReinoGameData';
+  // Criar chave de armazenamento específica do usuário
+  const STORAGE_KEY = userId ? `caminhoReinoGameData_${userId}` : 'caminhoReinoGameData';
 
   // Carregar dados salvos ao inicializar
   useEffect(() => {

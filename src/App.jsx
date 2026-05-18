@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import QuizGame from './QuizGame';
+import LoginPage from './pages/Login';
+import RegisterPage from './pages/Register';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 
 // Ícones simples em SVG
@@ -14,7 +16,8 @@ const NotificationsIcon = () => (<svg viewBox="0 0 24 24" width="24" height="24"
 
 // Componente interno que usa useAuth
 function AppContent() {
-  const { user, loading } = useAuth();
+  const { user, loading, isAuthenticated } = useAuth();
+  const [authView, setAuthView] = useState('login'); // login, register
   const [activeTab, setActiveTab] = useState('play'); // Começar direto no jogo
 
   // Se carregando, mostra loading
@@ -31,7 +34,28 @@ function AppContent() {
     );
   }
 
-  // App principal (sempre logado como usuário anônimo)
+  // Se NÃO está autenticado, mostra telas de auth
+  if (!isAuthenticated) {
+    return (
+      <>
+        {authView === 'login' && (
+          <LoginPage 
+            onSwitchToRegister={() => setAuthView('register')}
+            onLoginSuccess={() => setActiveTab('play')}
+            onSwitchToForgot={() => {}}
+          />
+        )}
+        {authView === 'register' && (
+          <RegisterPage 
+            onSwitchToLogin={() => setAuthView('login')}
+            onRegisterSuccess={() => setAuthView('login')}
+          />
+        )}
+      </>
+    );
+  }
+
+  // App principal (logado)
   return (
     <div className="app-container">
       
