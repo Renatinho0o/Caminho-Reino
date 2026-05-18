@@ -131,7 +131,65 @@ const lessonData = {
       }
     },
     // Capítulos bloqueados (placeholders)
-    { id: 4, title: "Capítulo 4", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
+    {
+      id: 4,
+      title: "O Mistério do Novo Nascimento",
+      description: "Jesus Pode Nos Transformar",
+      icon: "🔥",
+      unlocked: true,
+      questions: [
+        {
+          question: "Nicodemos era descrito como 'mestre em Israel', porém demonstrou desconhecimento sobre o Novo Nascimento. Segundo a lição, qual verdade teológica é enfatizada por essa reação de Nicodemos?",
+          answers: [
+            { text: "O conhecimento da Lei é suficiente para alcançar a salvação", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A tradição religiosa substitui a experiência espiritual", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A religiosidade sem regeneração não conduz ao Reino de Deus", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "O Reino de Deus pertence apenas aos judeus instruídos", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Ao relacionar João 3 com Efésios 2.1, a lição ensina que o Novo Nascimento é necessário porque:",
+          answers: [
+            { text: "O homem perdeu apenas parte de sua comunhão com Deus", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A humanidade estava espiritualmente morta em ofensas e pecados", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "O pecado afeta somente aqueles que rejeitam explicitamente a Lei", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "O homem possui capacidade própria de restaurar sua natureza caída", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Comparando Nicodemos e o jovem rico, qual contraste a lição destaca?",
+          answers: [
+            { text: "Nicodemos rejeitou a eternidade, enquanto o homem rico rejeitou os milagres", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Nicodemos confiava em riquezas, enquanto o homem rico confiava na Lei", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Nicodemos possuía conhecimento sem compreensão espiritual, enquanto o homem rico possuía interesse sem renúncia verdadeira", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Nicodemos não cria em Deus, enquanto o homem rico não obedecia aos mandamentos", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a lição, por que o amor descrito em 1 Coríntios 13 está diretamente ligado à evidência do Novo Nascimento?",
+          answers: [
+            { text: "Porque o amor é um dom reservado apenas aos líderes espirituais", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Porque o amor substitui a necessidade da santificação", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Porque o verdadeiro amor demonstra externamente a transformação operada por Cristo", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Porque a salvação é alcançada através de obras de caridade", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "A afirmação 'a obra de Cristo foi consumada no Calvário' está ligada a qual conclusão central da lição?",
+          answers: [
+            { text: "O homem pode alcançar a salvação por mérito próprio após o sacrifício de Cristo", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A decisão humana determina se a graça recebida será aceita ou rejeitada", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "O Novo Nascimento depende exclusivamente de tradições religiosas", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "A vida eterna é herdada automaticamente pelos filhos de cristãos", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Chama da Regeneração",
+        description: "O fogo espiritual que simboliza a nova vida concedida pelo Espírito Santo",
+        icon: "🔥"
+      }
+    },
     { id: 5, title: "Capítulo 5", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 6, title: "Capítulo 6", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 7, title: "Capítulo 7", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
