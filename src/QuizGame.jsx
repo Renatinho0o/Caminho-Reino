@@ -670,18 +670,12 @@ export default function QuizGame({ onQuit }) {
     return (
       <div className="quiz-container menu-bg">
         <div className="menu-content menu-content-compact">
-          <div style={{ marginBottom: '20px', textAlign: 'center', color: '#fff' }}>
-            <p style={{ fontSize: '14px', color: '#aaa' }}>Bem-vindo, {user?.name}!</p>
-          </div>
           <div className="menu-buttons">
             <button className="menu-btn primary" onClick={() => setGameState('map')}>
               🎮 Iniciar
             </button>
             <button className="menu-btn secondary" onClick={() => setGameState('inventory')}>
               🎒 Inventário {inventory.length > 0 && <span className="badge">{inventory.length}</span>}
-            </button>
-            <button className="menu-btn secondary" onClick={logout} style={{ marginTop: '10px', backgroundColor: '#e74c3c' }}>
-              🚪 Sair
             </button>
           </div>
         </div>
