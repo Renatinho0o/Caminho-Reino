@@ -427,7 +427,65 @@ const lessonData = {
         icon: "⛓️"
       }
     },
-    { id: 9, title: "Capítulo 9", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
+    {
+      id: 9,
+      title: "Guardiões do Coração",
+      description: "Posso ser Puro de Coração",
+      icon: "🏮",
+      unlocked: true,
+      questions: [
+        {
+          question: "A lição estabelece um contraste entre os valores cristãos e os valores culturais contemporâneos. Considerando esse contraste, qual afirmação melhor expressa a razão pela qual os valores cristãos são apresentados como eternos?",
+          answers: [
+            { text: "Porque foram preservados pela tradição da igreja ao longo dos séculos, independentemente das Escrituras.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Porque derivam de princípios revelados por Deus na Sua Palavra, permanecendo imutáveis mesmo quando a cultura se transforma.", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "Porque são aceitos pela maioria das sociedades ocidentais e orientais ao longo da história.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Porque refletem apenas costumes religiosos desenvolvidos durante o período do Novo Testamento.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Ao relacionar o relativismo moral com a pureza do coração, a lição sugere que o maior perigo espiritual da ideia de que \"nada é certo ou errado\" consiste em:",
+          answers: [
+            { text: "Impedir o desenvolvimento intelectual dos cristãos.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Produzir divergências entre diferentes denominações cristãs.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Normalizar o pecado, eliminar referências morais absolutas e enfraquecer a consciência diante da verdade divina.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Tornar impossível a convivência entre pessoas de diferentes culturas.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "A lição afirma que Satanás tentou distorcer as Escrituras e, por isso, o conhecimento bíblico é indispensável. Qual conclusão está mais alinhada com esse ensino?",
+          answers: [
+            { text: "A pureza do coração depende principalmente da capacidade humana de interpretar textos religiosos complexos.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O conhecimento das Escrituras serve apenas para debates teológicos e apologéticos.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "O estudo da Palavra protege contra enganos espirituais, permitindo discernir distorções da verdade e permanecer fiel aos valores de Cristo.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "O conhecimento bíblico substitui a necessidade de relacionamento pessoal com Deus.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a advertência feita a partir do exemplo dos escribas e fariseus, qual era a contradição fundamental presente em sua espiritualidade?",
+          answers: [
+            { text: "Possuíam zelo missionário, mas rejeitavam a oração comunitária.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Conheciam profundamente as tradições judaicas, mas desconheciam os textos bíblicos.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Demonstravam grande interesse pela justiça social, mas negligenciavam os rituais religiosos.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Dominavam o conteúdo das Escrituras, porém não reconheceram o Verbo nem permitiram que a verdade transformasse o interior.", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "A analogia entre sintomas físicos e sintomas espirituais é utilizada para diagnosticar a saúde do coração. De acordo com a lição, qual situação revela um risco de adoecimento espiritual mesmo em alguém que continua estudando a Bíblia?",
+          answers: [
+            { text: "Ler diferentes traduções das Escrituras para ampliar a compreensão do texto.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Transformar o estudo bíblico em mera aquisição de informação, sem relacionamento genuíno com Cristo.", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "Buscar orientação de líderes espirituais para compreender passagens difíceis.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Dedicar tempo à meditação e reflexão sobre os ensinos de Jesus.", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Lâmpada dos Valores Eternos",
+        description: "Artefato raro que ilumina o caminho da verdade e protege o coração contra os enganos do relativismo.",
+        icon: "🏮"
+      }
+    },
     { id: 10, title: "Capítulo 10", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 11, title: "Capítulo 11", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 12, title: "Capítulo 12", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
