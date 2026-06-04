@@ -488,7 +488,8 @@ const lessonData = {
     },
     {
       id: 10,
-      title: "Testemunhas Até os Confins",
+      title: "🕊️  Vozes do Reino",
+      subtitle: "Chamados para Refletir Cristo ao Mundo",
       description: "Posso ser uma Testemunha?",
       icon: "🔥",
       unlocked: true,
@@ -540,9 +541,9 @@ const lessonData = {
         }
       ],
       reward: {
-        name: "Chama da Ousadia Apostólica",
-        description: "Símbolo do poder do Espírito Santo que transforma vidas comuns em testemunhas corajosas de Cristo.",
-        icon: "🔥"
+        name: "Pergaminho do Testemunho Fiel",
+        description: "Um artefato raro concedido àqueles que vivem e anunciam o Evangelho com coragem, coerência e dependência do Espírito Santo.",
+        icon: "📜"
       }
     },
     { id: 11, title: "Capítulo 11", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
