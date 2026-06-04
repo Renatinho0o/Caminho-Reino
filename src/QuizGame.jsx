@@ -486,7 +486,65 @@ const lessonData = {
         icon: "🏮"
       }
     },
-    { id: 10, title: "Capítulo 10", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
+    {
+      id: 10,
+      title: "Testemunhas Até os Confins",
+      description: "Posso ser uma Testemunha?",
+      icon: "🔥",
+      unlocked: true,
+      questions: [
+        {
+          question: "Segundo a lição, qual alternativa melhor sintetiza a relação entre Atos 1.8, a transformação dos discípulos e a definição pentecostal de testemunho cristão?",
+          answers: [
+            { text: "O testemunho depende principalmente do conhecimento teológico adquirido ao longo dos anos.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O testemunho eficaz resulta da combinação entre experiência real com Cristo e capacitação do Espírito Santo.", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "O testemunho é uma responsabilidade exclusiva de líderes e missionários vocacionados.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "O testemunho consiste principalmente em defender argumentos religiosos contra opositores.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Ao relacionar a experiência de Paulo no caminho de Damasco com a Verdade Prática da lição, qual conclusão está mais alinhada ao ensino apresentado?",
+          answers: [
+            { text: "Deus utiliza apenas pessoas que já possuíam boa reputação moral antes da conversão.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O chamado para testemunhar depende do passado religioso do indivíduo.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A transformação promovida por Cristo pode converter um opositor do Evangelho em instrumento de proclamação da salvação.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A principal característica de uma testemunha é possuir elevado conhecimento intelectual.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "A lição afirma que os discípulos passaram de tímidos, orgulhosos e impulsivos a homens semelhantes a Cristo. Qual evidência foi apresentada como demonstração histórica dessa transformação?",
+          answers: [
+            { text: "Foram escolhidos para governar Israel após a ressurreição.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Receberam autoridade política sobre Jerusalém.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Passaram a ser reconhecidos como mestres da Lei pelos fariseus.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Em Antioquia, foram chamados cristãos pela primeira vez.", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "Considerando a seção \"Politicamente correto? Tô fora!\", qual atitude reproduz de forma mais fiel o modelo de Jesus descrito na lição?",
+          answers: [
+            { text: "Adaptar a mensagem do Evangelho para evitar qualquer tipo de rejeição social.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Permanecer em silêncio sobre a fé para preservar relacionamentos e reputação.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Anunciar a verdade com amor, clareza e coragem, sem negociar os princípios do Evangelho.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Confrontar as pessoas de forma agressiva para demonstrar fidelidade doutrinária.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "De acordo com a lição, qual contraste melhor expressa a diferença entre apenas falar de Jesus e verdadeiramente testemunhar Jesus?",
+          answers: [
+            { text: "Falar de Jesus exige estudo; testemunhar exige milagres.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Falar de Jesus envolve palavras; testemunhar envolve uma vida coerente que revela Cristo.", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "Falar de Jesus é para adultos; testemunhar é para jovens.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Falar de Jesus ocorre na igreja; testemunhar ocorre apenas em missões.", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Chama da Ousadia Apostólica",
+        description: "Símbolo do poder do Espírito Santo que transforma vidas comuns em testemunhas corajosas de Cristo.",
+        icon: "🔥"
+      }
+    },
     { id: 11, title: "Capítulo 11", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 12, title: "Capítulo 12", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 13, title: "Capítulo 13", description: "Em desenvolvimento", icon: "🔒", unlocked: false }
