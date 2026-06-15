@@ -164,14 +164,45 @@
 /* Responsivo */
 @media (max-width: 480px) {
   .auth-container {
-    padding: 30px 20px;
+    padding: 25px 16px;
+    max-width: 95vw;
   }
   
   .auth-logo h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   
   .auth-container h2 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .auth-subtitle {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-group input {
+    padding: 12px 14px;
+    font-size: 16px;
+  }
+
+  .auth-btn {
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .link-btn {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .debug-token code {
+    font-size: 11px;
+    word-break: break-word;
   }
 }
