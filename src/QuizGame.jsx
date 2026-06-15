@@ -488,65 +488,124 @@ const lessonData = {
     },
     {
       id: 10,
-      title: "🕊️  Vozes do Reino",
-      subtitle: "Chamados para Refletir Cristo ao Mundo",
+      title: "🕊️  Ecos do Cenáculo",
+      subtitle: "Capacitados para Testemunhar em um Mundo que Silencia a Verdade",
       description: "Posso ser uma Testemunha?",
       icon: "🔥",
       unlocked: true,
       questions: [
         {
-          question: "Segundo a lição, qual alternativa melhor sintetiza a relação entre Atos 1.8, a transformação dos discípulos e a definição pentecostal de testemunho cristão?",
+          question: "Segundo a lição, qual alternativa expressa corretamente a relação entre Atos 1.8, a transformação dos discípulos e a natureza do testemunho cristão?",
           answers: [
-            { text: "O testemunho depende principalmente do conhecimento teológico adquirido ao longo dos anos.", color: "red", shape: "triangle", isCorrect: false },
-            { text: "O testemunho eficaz resulta da combinação entre experiência real com Cristo e capacitação do Espírito Santo.", color: "blue", shape: "diamond", isCorrect: true },
-            { text: "O testemunho é uma responsabilidade exclusiva de líderes e missionários vocacionados.", color: "yellow", shape: "circle", isCorrect: false },
-            { text: "O testemunho consiste principalmente em defender argumentos religiosos contra opositores.", color: "green", shape: "square", isCorrect: false }
+            { text: "O testemunho nasce principalmente do conhecimento teológico acumulado ao longo dos anos.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O testemunho eficaz resulta da combinação entre experiência pessoal com Cristo e capacitação do Espírito Santo.", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "O testemunho depende da posição ocupada dentro da igreja e do reconhecimento da liderança.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "O testemunho é uma responsabilidade exclusiva daqueles que receberam dons ministeriais específicos.", color: "green", shape: "square", isCorrect: false }
           ]
         },
         {
-          question: "Ao relacionar a experiência de Paulo no caminho de Damasco com a Verdade Prática da lição, qual conclusão está mais alinhada ao ensino apresentado?",
+          question: "A lição apresenta Paulo como modelo de testemunha cristã. Qual aspecto de sua experiência em Damasco recebe maior ênfase teológica dentro da perspectiva pentecostal apresentada?",
           answers: [
-            { text: "Deus utiliza apenas pessoas que já possuíam boa reputação moral antes da conversão.", color: "red", shape: "triangle", isCorrect: false },
-            { text: "O chamado para testemunhar depende do passado religioso do indivíduo.", color: "blue", shape: "diamond", isCorrect: false },
-            { text: "A transformação promovida por Cristo pode converter um opositor do Evangelho em instrumento de proclamação da salvação.", color: "yellow", shape: "circle", isCorrect: true },
-            { text: "A principal característica de uma testemunha é possuir elevado conhecimento intelectual.", color: "green", shape: "square", isCorrect: false }
+            { text: "A substituição do judaísmo pelo cristianismo como sistema religioso.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A aquisição de maior conhecimento intelectual das Escrituras.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A transformação sobrenatural operada por Cristo e potencializada pela capacitação do Espírito para uma nova missão.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A mudança geográfica de seu campo de atuação missionária.", color: "green", shape: "square", isCorrect: false }
           ]
         },
         {
-          question: "A lição afirma que os discípulos passaram de tímidos, orgulhosos e impulsivos a homens semelhantes a Cristo. Qual evidência foi apresentada como demonstração histórica dessa transformação?",
+          question: "Ao relacionar os exemplos do gadareno, de Zaqueu e da mulher samaritana, a lição conclui que a nova maneira de viver oferecida por Jesus demonstra que:",
           answers: [
-            { text: "Foram escolhidos para governar Israel após a ressurreição.", color: "red", shape: "triangle", isCorrect: false },
-            { text: "Receberam autoridade política sobre Jerusalém.", color: "blue", shape: "diamond", isCorrect: false },
-            { text: "Passaram a ser reconhecidos como mestres da Lei pelos fariseus.", color: "yellow", shape: "circle", isCorrect: false },
-            { text: "Em Antioquia, foram chamados cristãos pela primeira vez.", color: "green", shape: "square", isCorrect: true }
+            { text: "A restauração divina é reservada aos que já possuem boa reputação moral.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O Evangelho deve priorizar pessoas socialmente influentes.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Jesus acolhe diferentes tipos de pessoas, mas exige transformação interior que produza uma vida restaurada.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A mudança espiritual ocorre independentemente da resposta pessoal ao chamado de Cristo.", color: "green", shape: "square", isCorrect: false }
           ]
         },
         {
-          question: "Considerando a seção \"Politicamente correto? Tô fora!\", qual atitude reproduz de forma mais fiel o modelo de Jesus descrito na lição?",
+          question: "De acordo com a lição, qual foi o principal erro dos cristãos que cedem à pressão do 'politicamente correto'?",
           answers: [
-            { text: "Adaptar a mensagem do Evangelho para evitar qualquer tipo de rejeição social.", color: "red", shape: "triangle", isCorrect: false },
-            { text: "Permanecer em silêncio sobre a fé para preservar relacionamentos e reputação.", color: "blue", shape: "diamond", isCorrect: false },
-            { text: "Anunciar a verdade com amor, clareza e coragem, sem negociar os princípios do Evangelho.", color: "yellow", shape: "circle", isCorrect: true },
-            { text: "Confrontar as pessoas de forma agressiva para demonstrar fidelidade doutrinária.", color: "green", shape: "square", isCorrect: false }
+            { text: "Defender a verdade bíblica sem amor.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Priorizar ações sociais em vez da evangelização.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Esconder ou suavizar a mensagem do Evangelho para evitar rejeição ou críticas.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Buscar diálogo com pessoas de opiniões diferentes.", color: "green", shape: "square", isCorrect: false }
           ]
         },
         {
-          question: "De acordo com a lição, qual contraste melhor expressa a diferença entre apenas falar de Jesus e verdadeiramente testemunhar Jesus?",
+          question: "Considerando os exemplos de Jesus, dos discípulos após Pentecostes e do apóstolo Paulo, qual princípio sintetiza a definição de testemunho apresentada em toda a lição?",
           answers: [
-            { text: "Falar de Jesus exige estudo; testemunhar exige milagres.", color: "red", shape: "triangle", isCorrect: false },
-            { text: "Falar de Jesus envolve palavras; testemunhar envolve uma vida coerente que revela Cristo.", color: "blue", shape: "diamond", isCorrect: true },
-            { text: "Falar de Jesus é para adultos; testemunhar é para jovens.", color: "yellow", shape: "circle", isCorrect: false },
-            { text: "Falar de Jesus ocorre na igreja; testemunhar ocorre apenas em missões.", color: "green", shape: "square", isCorrect: false }
+            { text: "Testemunhar consiste principalmente em transmitir informações corretas sobre a fé cristã.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Testemunhar é defender valores religiosos diante da sociedade.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Testemunhar é unir palavras e vida transformada, revelando Cristo por meio da ação do Espírito Santo.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "Testemunhar é participar regularmente das atividades da igreja local.", color: "green", shape: "square", isCorrect: false }
           ]
         }
       ],
       reward: {
-        name: "Pergaminho do Testemunho Fiel",
-        description: "Um artefato raro concedido àqueles que vivem e anunciam o Evangelho com coragem, coerência e dependência do Espírito Santo.",
-        icon: "📜"
+        name: "Chama do Cenáculo",
+        description: "Uma centelha espiritual que simboliza a ousadia concedida pelo Espírito Santo às testemunhas fiéis de Cristo.",
+        icon: "🔥🕊️"
       }
     },
-    { id: 11, title: "Capítulo 11", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
+    {
+      id: 11,
+      title: "O Reflexo do Espírito em Ações de Misericórdia",
+      subtitle: "Posso Fazer a Diferença",
+      description: "Posso Fazer a Diferença",
+      icon: "🤝",
+      unlocked: true,
+      questions: [
+        {
+          question: "De acordo com a lição, qual alternativa expressa corretamente a relação entre Efésios 2.10 e Tiago 2.14–17?",
+          answers: [
+            { text: "As boas obras são o meio pelo qual o cristão conquista sua salvação diante de Deus.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "As boas obras substituem a necessidade da fé quando realizadas em favor dos necessitados.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "As boas obras são evidências externas da transformação produzida pela graça, revelando uma fé autêntica.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A prática de boas obras possui importância apenas social, sem relação com a vida espiritual.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Segundo a interpretação apresentada na lição sobre a parábola do Bom Samaritano, qual foi o contraste teológico central entre o sacerdote, o levita e o samaritano?",
+          answers: [
+            { text: "O samaritano possuía maior conhecimento da Lei do que os líderes religiosos.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "O sacerdote e o levita não tinham condições materiais de ajudar o ferido.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "O samaritano demonstrou que a verdadeira espiritualidade se manifesta em misericórdia prática, enquanto a religiosidade sem compaixão é vazia.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "O samaritano foi escolhido porque pertencia ao povo da aliança e possuía autoridade religiosa.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "A lição afirma que o pentecostalismo histórico associa experiência espiritual e responsabilidade social. Qual exemplo bíblico é utilizado para demonstrar essa integração entre fé, unidade e cuidado mútuo?",
+          answers: [
+            { text: "A reconstrução dos muros de Jerusalém sob a liderança de Neemias.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A comunidade cristã do primeiro século que compartilhava bens e cuidava dos necessitados.", color: "blue", shape: "diamond", isCorrect: true },
+            { text: "A peregrinação de Israel pelo deserto sob a liderança de Moisés.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "A organização dos turnos sacerdotais no templo de Jerusalém.", color: "green", shape: "square", isCorrect: false }
+          ]
+        },
+        {
+          question: "Com base na lição, qual característica distingue o cuidado de Jesus pelos necessitados de uma simples assistência social?",
+          answers: [
+            { text: "Jesus limitava Seu ministério aos necessitados que demonstravam fé suficiente.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "Jesus priorizava exclusivamente as necessidades espirituais das pessoas.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "Jesus atendia apenas aqueles que pertenciam ao povo judeu.", color: "yellow", shape: "circle", isCorrect: false },
+            { text: "Jesus exercia um cuidado integral, alcançando necessidades físicas, emocionais e espirituais.", color: "green", shape: "square", isCorrect: true }
+          ]
+        },
+        {
+          question: "Considerando o exemplo de Barnabé e a conclusão geral da lição, qual afirmação melhor sintetiza a compreensão pentecostal sobre generosidade cristã?",
+          answers: [
+            { text: "A generosidade é válida somente quando envolve grandes quantias financeiras.", color: "red", shape: "triangle", isCorrect: false },
+            { text: "A generosidade é uma estratégia para alcançar reconhecimento e influência na igreja.", color: "blue", shape: "diamond", isCorrect: false },
+            { text: "A generosidade é fruto da ação do Espírito Santo, manifestando-se em recursos, tempo, apoio, encorajamento e serviço.", color: "yellow", shape: "circle", isCorrect: true },
+            { text: "A generosidade deve ser praticada apenas por líderes e pessoas com dons ministeriais específicos.", color: "green", shape: "square", isCorrect: false }
+          ]
+        }
+      ],
+      reward: {
+        name: "Manto da Compaixão do Samaritano",
+        description: "Relíquia rara que simboliza a fé que se transforma em misericórdia, serviço e amor ao próximo.",
+        icon: "🕊️✨"
+      }
+    },
     { id: 12, title: "Capítulo 12", description: "Em desenvolvimento", icon: "🔒", unlocked: false },
     { id: 13, title: "Capítulo 13", description: "Em desenvolvimento", icon: "🔒", unlocked: false }
   ]
