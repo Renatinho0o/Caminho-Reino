@@ -100,13 +100,13 @@
   opacity: 0.3;
 }
 
-.shape-icon {
+/* .shape-icon {
   width: 30px;
   height: 30px;
   fill: white;
   margin-right: 12px;
   flex-shrink: 0;
-}
+} */
 
 .answer-text {
   text-align: left;

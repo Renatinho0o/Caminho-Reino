@@ -1125,9 +1125,6 @@ export default function QuizGame({ onQuit }) {
             onClick={() => handleAnswer(idx)}
             disabled={showResult}
           >
-            <div className="shape-icon">
-              {getShapeSvg(ans.shape)}
-            </div>
             <span className="answer-text">{ans.text}</span>
           </button>
         ))}
